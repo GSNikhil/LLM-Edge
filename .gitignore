@@ -1,3 +1,9 @@
+gsm8k_saved/*
+Qwen2.5-0.5B/*
+test.ipynb
+logs/*
+meeting_notes.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
