@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 def plot_weight_distribution(model, bins=256, count_nonzero_only=False):
-    fig, axes = plt.subplots(3,3, figsize=(10, 6))
+    fig, axes = plt.subplots(3,26, figsize=(10, 6))
     axes = axes.ravel()
     plot_index = 0
     for name, param in model.named_parameters():

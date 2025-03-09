@@ -14,6 +14,7 @@ from torchvision.datasets import *
 from torchvision.transforms import *
 from tqdm.auto import tqdm
 from utils import misc, visulaiser
+import evaluate_llm as eval
 
 
 def fine_grained_prune(tensor: torch.Tensor, sparsity : float) -> torch.Tensor:
@@ -44,7 +45,7 @@ def sensitivity_scan(model, dataloader, scan_step=0.1, scan_start=0.4, scan_end=
         accuracy = []
         for sparsity in tqdm(sparsities, desc=f'scanning {i_layer}/{len(named_conv_weights)} weight - {name}'):
             fine_grained_prune(param.detach(), sparsity=sparsity)
-            acc = misc.evaluate(model, dataloader, verbose=False)
+            acc = eval.evaluate(model, dataloader, verbose=False)
             if verbose:
                 print(f'\r    sparsity={sparsity:.2f}: accuracy={acc:.2f}%', end='')
             param.copy_(param_clone)
