@@ -13,14 +13,15 @@ def generate_answer(model, tokenizer, question, device):
     inputs = tokenizer(prompt, return_tensors="pt").to(device)
     
     with torch.no_grad():
-        output = model.generate(**inputs, max_new_tokens=256, do_sample=False, pad_token_id=tokenizer.eos_token_id)  # Adjust max_length if needed
+        output = model.generate(**inputs, max_new_tokens=128, do_sample=False, pad_token_id=tokenizer.eos_token_id)  # Adjust max_length if needed
     
     answer = tokenizer.decode(output[0], skip_special_tokens=True)
     return answer
 
-def measure_test_accuracy(model, tokenizer, dataset_path, device):
+def measure_test_accuracy(model, tokenizer, dataset_path, device, display=False):
     # Make the model eval
     model.eval()
+    model = model.to(device)
 
     # Load Dataset
     dataset = load_from_disk(dataset_path)
@@ -47,6 +48,15 @@ def measure_test_accuracy(model, tokenizer, dataset_path, device):
             ground_truth = sample["answer"]
             
             model_answer = generate_answer(model, tokenizer, question, device)
+
+            if display:
+                print("=" * 20)
+                print("Question:")
+                print(question)
+                print("Ground Truth:")
+                print(ground_truth)
+                print("Model Response:")
+                print(model_answer)
             
             if ground_truth.strip() in model_answer:  # Basic match check
                 match = 1

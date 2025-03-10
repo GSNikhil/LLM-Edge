@@ -3,6 +3,7 @@ Qwen2.5-0.5B/*
 test.ipynb
 logs/*
 meeting_notes.txt
+gpt2/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
