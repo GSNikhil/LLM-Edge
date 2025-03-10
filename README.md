@@ -5,4 +5,4 @@
 2. Download Datasets and Models
 `python3 download_datasets_models.py`
 
-3. 
+3. Run `run.py`
