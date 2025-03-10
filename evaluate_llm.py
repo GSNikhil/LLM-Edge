@@ -61,7 +61,9 @@ def measure_test_accuracy(model, tokenizer, dataset_path, device):
 
             log_file.write(f"{i}\t{match:.2f}\t{scores['rouge1'].fmeasure:.4f}\t{scores['rouge2'].fmeasure:.4f}\t{scores['rougeL'].fmeasure:.4f}\n")
             match = 0
-            break
+            if i == 20:
+                print(i)
+                break
 
     accuracy = correct / total * 100
     
@@ -76,5 +78,4 @@ def measure_test_accuracy(model, tokenizer, dataset_path, device):
     print(f"Average ROUGE-L: {avg_rougeL:.4f}")
 
     log_file.write(f"Avg\t{accuracy:.2f}\t{avg_rouge1:.4f}\t{avg_rouge2:.4f}\t{avg_rougeL:.4f}\n")
-
-    log_file.close()
+    return accuracy
