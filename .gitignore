@@ -1,9 +1,11 @@
-gsm8k_saved/*
+gsm8k*
+qwen*
 Qwen2.5-0.5B/*
 test.ipynb
 logs/*
 meeting_notes.txt
 gpt2/*
+core
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
