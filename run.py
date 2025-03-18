@@ -26,6 +26,7 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 # Download Model or Load Model
 #############################
 
+# model_name = "wzzju/Qwen2.5-1.5B-GRPO-GSM8K"
 model_name = "Qwen/Qwen2-Math-1.5B-Instruct"
 model_pth = f"./{model_name.split('/')[-1]}"
 
@@ -123,7 +124,10 @@ def generate_answer(model, tokenizer, sample, device):
         if k != "question" and k != "answer" and k != 'original_answer':
             batch[k] = torch.tensor(v).to(device)
     
-    output = model.generate(**batch, max_new_tokens=16, do_sample=False)
+    output = model.generate(**batch, max_new_tokens=16, do_sample=False,
+                            # do_sample = True,
+                            # temperature = 0.3,
+                            )
     output = tokenizer.decode(output[0][len(batch['input_ids'][0]):], skip_special_tokens=True) 
 
     return output
