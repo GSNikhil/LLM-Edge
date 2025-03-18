@@ -113,7 +113,7 @@ else:
 test_data = tokenized_data["test"]
 
 # small_train_dataset = train_data.shuffle(seed=42).select(range(1000)) # Loading only 1000
-small_eval_dataset = test_data.shuffle(seed=42)#.select(range(5))
+small_eval_dataset = test_data.shuffle(seed=42).select(range(200))
 
 # train_dataloader = DataLoader(small_train_dataset, shuffle=True, batch_size=1)
 eval_dataloader = DataLoader(small_eval_dataset, batch_size=1)
