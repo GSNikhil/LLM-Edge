@@ -1,36 +1,37 @@
-from datasets import load_dataset, load_from_disk
 from rouge_score import rouge_scorer
-from datasets import load_dataset
-from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 import os
+import re
+from tqdm.auto import tqdm
+import numpy as np
 
 # Logging
 from datetime import datetime
 
-def generate_answer(model, tokenizer, question, device):
-    prompt = f"Question: {question}\nAnswer:"
-    inputs = tokenizer(prompt, return_tensors="pt").to(device)
+def generate_answer(model, tokenizer, sample, device):
+    batch = {}
+    for k, v in sample.items():
+        if k != "question" and k != "answer" and k != 'original_answer':
+            batch[k] = torch.tensor(v).to(device)
     
-    with torch.no_grad():
-        output = model.generate(**inputs, max_new_tokens=128, do_sample=False, pad_token_id=tokenizer.eos_token_id)  # Adjust max_length if needed
-    
-    answer = tokenizer.decode(output[0], skip_special_tokens=True)
-    return answer
+    output = model.generate(**batch, max_new_tokens=16, do_sample=False)
+    output = tokenizer.decode(output[0][len(batch['input_ids'][0]):], skip_special_tokens=True) 
 
-def measure_test_accuracy(model, tokenizer, dataset_path, device, display=False):
+    return output
+
+def measure_test_accuracy(model, tokenizer, dataloader, device, display=False):
     # Make the model eval
     model.eval()
     model = model.to(device)
 
-    # Load Dataset
-    dataset = load_from_disk(dataset_path)
-    test_data = dataset['test']
-    print("Len of Test Data: ", len(test_data))
+    total = len(dataloader)
+    num_training_steps = total
+    progress_bar = tqdm(range(num_training_steps))
 
     # Evaluate - Basic
-    correct = 0
-    total = len(test_data)
+    accuracy_log = []
+    accuracy = 0
+    
 
     # ROUGE Scorer
     scorer = rouge_scorer.RougeScorer(["rouge1", "rouge2", "rougeL"], use_stemmer=True)
@@ -41,41 +42,39 @@ def measure_test_accuracy(model, tokenizer, dataset_path, device, display=False)
     log_file = open(f"logs/{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt", "w")
     log_file.write("Sample\tMatch\tRouge1\tRouge2\tRougeL\n")
 
-    match = 0
     with torch.no_grad():
-        for i, sample in enumerate(test_data):
-            question = sample["question"]
-            ground_truth = sample["answer"]
-            
-            model_answer = generate_answer(model, tokenizer, question, device)
+        for i, sample in enumerate(dataloader):
 
-            if display:
-                print("=" * 20)
-                print("Question:")
-                print(question)
-                print("Ground Truth:")
-                print(ground_truth)
-                print("Model Response:")
-                print(model_answer)
+            output = generate_answer(model, tokenizer, sample, device)
+
+            match = re.search(r"\s*([\d]+)", output)  # Match number after ####
+            generated_answer = float(match.group(1)) if match else 0  # Return extracted number
             
-            if ground_truth.strip() in model_answer:  # Basic match check
-                match = 1
-                correct += 1
+            accuracy = (generated_answer == sample['answer'].item())
+            accuracy_log.append(accuracy)
 
             # Compute ROUGE scores
-            scores = scorer.score(ground_truth, model_answer)
+            scores = scorer.score(sample['original_answer'][0], output)
 
             rouge1_scores.append(scores["rouge1"].fmeasure)
             rouge2_scores.append(scores["rouge2"].fmeasure)
             rougeL_scores.append(scores["rougeL"].fmeasure)
 
-            log_file.write(f"{i}\t{match:.2f}\t{scores['rouge1'].fmeasure:.4f}\t{scores['rouge2'].fmeasure:.4f}\t{scores['rougeL'].fmeasure:.4f}\n")
-            match = 0
-            if i == 20:
-                print(i)
-                break
+            if display:
+                print(f"Example {i+1}:\n")
+                print(f"Input: {sample['question']}\n")
+                print(f"Generated Answer: {output}\n")
+                print(f"Target Output: {sample['answer'].item()}\n")
+                print(f"Output Answer: {generated_answer}")
+                print("-" * 50)
 
-    accuracy = correct / total * 100
+            log_file.write(f"{i}\t{accuracy:.2f}\t{scores['rouge1'].fmeasure:.4f}\t{scores['rouge2'].fmeasure:.4f}\t{scores['rougeL'].fmeasure:.4f}\n")
+            if i % 100 == 0:
+                print(f"{i}\t{accuracy:.2f}\t{scores['rouge1'].fmeasure:.4f}\t{scores['rouge2'].fmeasure:.4f}\t{scores['rougeL'].fmeasure:.4f}\n")
+            
+            progress_bar.update(1)
+
+    accuracy = np.sum(accuracy_log) / total * 100
     
     # Calculate Average ROUGE Scores
     avg_rouge1 = sum(rouge1_scores) / len(rouge1_scores)
@@ -88,4 +87,3 @@ def measure_test_accuracy(model, tokenizer, dataset_path, device, display=False)
     print(f"Average ROUGE-L: {avg_rougeL:.4f}")
 
     log_file.write(f"Avg\t{accuracy:.2f}\t{avg_rouge1:.4f}\t{avg_rouge2:.4f}\t{avg_rougeL:.4f}\n")
-    return accuracy

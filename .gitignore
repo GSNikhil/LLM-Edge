@@ -6,6 +6,7 @@ logs/2025*
 meeting_notes.txt
 gpt2/*
 core
+quantize_models.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
