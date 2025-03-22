@@ -1,0 +1,1908 @@
+==================================================
+Number of Pruned Layers = 0, Original Layers = 28, Remaining Layers=28
+Using Pre-Downloaded Dataset
+Dataset Loaded
+Token indices sequence length is longer than the specified maximum sequence length for this model (80865 > 32768). Running this sequence through the model will result in indexing errors
+evaluating...: 100%|██████████| 10/10 [00:15<00:00,  1.53s/it]
+100%
+ 200/200 [02:19<00:00,  1.46it/s]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:629: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+0	0.00	0.1389	0.0857	0.1389
+
+100	0.00	0.2286	0.0000	0.2286
+
+Model Accuracy on GSM8K: 1.00%
+Average ROUGE-1: 0.1491
+Average ROUGE-2: 0.0567
+Average ROUGE-L: 0.1246
+
+model perplexity: 9.34
+model size: 5710.28 MiB
+Model Parameters: 1496916480
+==================================================
+==================================================
+Number of Pruned Layers = 1, Original Layers = 28, Remaining Layers=27
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+evaluating...:  20%|██        | 2/10 [00:01<00:07,  1.12it/s]
+evaluating...:  30%|███       | 3/10 [00:03<00:08,  1.21s/it]
+evaluating...:  40%|████      | 4/10 [00:05<00:08,  1.38s/it]
+evaluating...:  50%|█████     | 5/10 [00:06<00:07,  1.47s/it]
+evaluating...:  60%|██████    | 6/10 [00:08<00:06,  1.54s/it]
+evaluating...:  70%|███████   | 7/10 [00:10<00:04,  1.58s/it]
+evaluating...:  80%|████████  | 8/10 [00:11<00:03,  1.61s/it]
+evaluating...:  90%|█████████ | 9/10 [00:13<00:01,  1.63s/it]
+evaluating...: 100%|██████████| 10/10 [00:15<00:00,  1.51s/it]
+100%
+ 200/200 [02:23<00:00,  1.52it/s]
+0	0.00	0.1600	0.0822	0.1333
+
+100	0.00	0.2286	0.0000	0.2286
+
+Model Accuracy on GSM8K: 1.50%
+Average ROUGE-1: 0.1492
+Average ROUGE-2: 0.0570
+Average ROUGE-L: 0.1216
+
+model perplexity: 10.37
+model size: 5531.76 MiB
+Model Parameters: 1450118656
+==================================================
+==================================================
+Number of Pruned Layers = 2, Original Layers = 28, Remaining Layers=26
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+evaluating...:  20%|██        | 2/10 [00:01<00:06,  1.21it/s]
+
+evaluating...:  30%|███       | 3/10 [00:03<00:08,  1.15s/it]
+
+evaluating...:  40%|████      | 4/10 [00:04<00:07,  1.32s/it]
+
+evaluating...:  50%|█████     | 5/10 [00:06<00:07,  1.41s/it]
+
+evaluating...:  60%|██████    | 6/10 [00:08<00:05,  1.47s/it]
+
+evaluating...:  70%|███████   | 7/10 [00:09<00:04,  1.52s/it]
+
+evaluating...:  80%|████████  | 8/10 [00:11<00:03,  1.55s/it]
+
+evaluating...:  90%|█████████ | 9/10 [00:12<00:01,  1.57s/it]
+
+evaluating...: 100%|██████████| 10/10 [00:14<00:00,  1.45s/it]
+100%
+ 200/200 [17:27<00:00,  1.52it/s]
+0	0.00	0.1081	0.0278	0.1081
+
+100	0.00	0.2778	0.0588	0.2778
+
+Model Accuracy on GSM8K: 1.00%
+Average ROUGE-1: 0.1160
+Average ROUGE-2: 0.0459
+Average ROUGE-L: 0.0971
+
+model perplexity: 12.63
+model size: 5353.24 MiB
+Model Parameters: 1403320832
+==================================================
+==================================================
+Number of Pruned Layers = 3, Original Layers = 28, Remaining Layers=25
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+evaluating...:  20%|██        | 2/10 [00:01<00:05,  1.53it/s]
+
+
+evaluating...:  30%|███       | 3/10 [00:02<00:07,  1.02s/it]
+
+
+evaluating...:  40%|████      | 4/10 [00:04<00:07,  1.22s/it]
+
+
+evaluating...:  50%|█████     | 5/10 [00:05<00:06,  1.33s/it]
+
+
+evaluating...:  60%|██████    | 6/10 [00:07<00:05,  1.41s/it]
+
+
+evaluating...:  70%|███████   | 7/10 [00:09<00:04,  1.45s/it]
+
+
+evaluating...:  80%|████████  | 8/10 [00:10<00:02,  1.48s/it]
+
+
+evaluating...:  90%|█████████ | 9/10 [00:12<00:01,  1.51s/it]
+
+
+evaluating...: 100%|██████████| 10/10 [00:13<00:00,  1.37s/it]
+100%
+ 200/200 [14:57<00:00,  1.60it/s]
+0	0.00	0.0000	0.0000	0.0000
+
+100	0.00	0.0000	0.0000	0.0000
+
+Model Accuracy on GSM8K: 1.50%
+Average ROUGE-1: 0.0858
+Average ROUGE-2: 0.0277
+Average ROUGE-L: 0.0707
+
+model perplexity: 24.51
+model size: 5174.72 MiB
+Model Parameters: 1356523008
+==================================================
+==================================================
+Number of Pruned Layers = 4, Original Layers = 28, Remaining Layers=24
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+evaluating...:  20%|██        | 2/10 [00:01<00:04,  1.63it/s]
+
+
+
+evaluating...:  30%|███       | 3/10 [00:02<00:06,  1.02it/s]
+
+
+
+evaluating...:  40%|████      | 4/10 [00:04<00:07,  1.17s/it]
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:05<00:06,  1.28s/it]
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:07<00:05,  1.35s/it]
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:08<00:04,  1.40s/it]
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:10<00:02,  1.43s/it]
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:11<00:01,  1.45s/it]
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:13<00:00,  1.32s/it]
+100%
+ 200/200 [12:33<00:00,  1.74it/s]
+0	0.00	0.0000	0.0000	0.0000
+
+100	0.00	0.3333	0.0588	0.2222
+
+Model Accuracy on GSM8K: 0.00%
+Average ROUGE-1: 0.0742
+Average ROUGE-2: 0.0201
+Average ROUGE-L: 0.0615
+
+model perplexity: 22.57
+model size: 4996.21 MiB
+Model Parameters: 1309725184
+==================================================
+==================================================
+Number of Pruned Layers = 5, Original Layers = 28, Remaining Layers=23
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+evaluating...:  20%|██        | 2/10 [00:01<00:04,  1.84it/s]
+
+
+
+
+evaluating...:  30%|███       | 3/10 [00:02<00:06,  1.09it/s]
+
+
+
+
+evaluating...:  40%|████      | 4/10 [00:03<00:06,  1.11s/it]
+
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:05<00:06,  1.22s/it]
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:06<00:05,  1.30s/it]
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:08<00:04,  1.35s/it]
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:09<00:02,  1.37s/it]
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:11<00:01,  1.39s/it]
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:12<00:00,  1.26s/it]
+100%
+ 200/200 [10:14<00:00,  1.65it/s]
+0	0.00	0.0000	0.0000	0.0000
+
+100	0.00	0.2941	0.0625	0.2353
+
+Model Accuracy on GSM8K: 0.50%
+Average ROUGE-1: 0.0708
+Average ROUGE-2: 0.0222
+Average ROUGE-L: 0.0615
+
+model perplexity: 27.52
+model size: 4817.69 MiB
+Model Parameters: 1262927360
+==================================================
+==================================================
+Number of Pruned Layers = 6, Original Layers = 28, Remaining Layers=22
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+
+evaluating...:  20%|██        | 2/10 [00:00<00:03,  2.06it/s]
+
+
+
+
+
+evaluating...:  30%|███       | 3/10 [00:02<00:06,  1.16it/s]
+
+
+
+
+
+evaluating...:  40%|████      | 4/10 [00:03<00:06,  1.06s/it]
+
+
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:05<00:05,  1.18s/it]
+
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:06<00:04,  1.24s/it]
+
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:07<00:03,  1.29s/it]
+
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:09<00:02,  1.33s/it]
+
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:10<00:01,  1.34s/it]
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:12<00:00,  1.21s/it]
+100%
+ 200/200 [08:00<00:00,  1.89it/s]
+0	0.00	0.1944	0.0571	0.1389
+
+100	0.00	0.2857	0.1212	0.2857
+
+Model Accuracy on GSM8K: 1.50%
+Average ROUGE-1: 0.1220
+Average ROUGE-2: 0.0353
+Average ROUGE-L: 0.1027
+
+model perplexity: 56.77
+model size: 4639.17 MiB
+Model Parameters: 1216129536
+==================================================
+==================================================
+Number of Pruned Layers = 7, Original Layers = 28, Remaining Layers=21
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+
+
+evaluating...:  20%|██        | 2/10 [00:00<00:03,  2.29it/s]
+
+
+
+
+
+
+evaluating...:  30%|███       | 3/10 [00:02<00:05,  1.24it/s]
+
+
+
+
+
+
+evaluating...:  40%|████      | 4/10 [00:03<00:06,  1.00s/it]
+
+
+
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:04<00:05,  1.11s/it]
+
+
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:06<00:04,  1.19s/it]
+
+
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:07<00:03,  1.23s/it]
+
+
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:08<00:02,  1.26s/it]
+
+
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:10<00:01,  1.29s/it]
+
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:11<00:00,  1.15s/it]
+100%
+ 200/200 [05:52<00:00,  1.83it/s]
+0	0.00	0.1127	0.0290	0.1127
+
+100	0.00	0.2778	0.0000	0.1667
+
+Model Accuracy on GSM8K: 1.00%
+Average ROUGE-1: 0.1045
+Average ROUGE-2: 0.0252
+Average ROUGE-L: 0.0878
+
+model perplexity: 104.24
+model size: 4460.65 MiB
+Model Parameters: 1169331712
+==================================================
+==================================================
+Number of Pruned Layers = 8, Original Layers = 28, Remaining Layers=20
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+evaluating...:  20%|██        | 2/10 [00:00<00:03,  2.66it/s]
+
+
+
+
+
+
+
+evaluating...:  30%|███       | 3/10 [00:02<00:05,  1.33it/s]
+
+
+
+
+
+
+
+evaluating...:  40%|████      | 4/10 [00:03<00:05,  1.06it/s]
+
+
+
+
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:04<00:05,  1.06s/it]
+
+
+
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:05<00:04,  1.13s/it]
+
+
+
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:07<00:03,  1.18s/it]
+
+
+
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:08<00:02,  1.21s/it]
+
+
+
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:09<00:01,  1.23s/it]
+
+
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:10<00:00,  1.10s/it]
+100%
+ 200/200 [03:50<00:00,  1.84it/s]
+0	0.00	0.0000	0.0000	0.0000
+
+100	0.00	0.1333	0.0000	0.1333
+
+Model Accuracy on GSM8K: 2.00%
+Average ROUGE-1: 0.0396
+Average ROUGE-2: 0.0039
+Average ROUGE-L: 0.0359
+
+model perplexity: 114.34
+model size: 4282.13 MiB
+Model Parameters: 1122533888
+==================================================
+==================================================
+Number of Pruned Layers = 9, Original Layers = 28, Remaining Layers=19
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+evaluating...:  20%|██        | 2/10 [00:00<00:02,  3.07it/s]
+
+
+
+
+
+
+
+
+evaluating...:  30%|███       | 3/10 [00:01<00:04,  1.41it/s]
+
+
+
+
+
+
+
+
+evaluating...:  40%|████      | 4/10 [00:03<00:05,  1.11it/s]
+
+
+
+
+
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:04<00:05,  1.01s/it]
+
+
+
+
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:05<00:04,  1.08s/it]
+
+
+
+
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:06<00:03,  1.13s/it]
+
+
+
+
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:08<00:02,  1.16s/it]
+
+
+
+
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:09<00:01,  1.18s/it]
+
+
+
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:10<00:00,  1.05s/it]
+100%
+ 200/200 [01:53<00:00,  2.15it/s]
+0	0.00	0.1842	0.0270	0.1579
+
+100	0.00	0.0000	0.0000	0.0000
+
+Model Accuracy on GSM8K: 1.00%
+Average ROUGE-1: 0.0662
+Average ROUGE-2: 0.0041
+Average ROUGE-L: 0.0582
+
+model perplexity: 220.57
+model size: 4103.61 MiB
+Model Parameters: 1075736064
+==================================================
+==================================================
+Number of Pruned Layers = 10, Original Layers = 28, Remaining Layers=18
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+evaluating...:  20%|██        | 2/10 [00:00<00:02,  3.71it/s]
+
+
+
+
+
+
+
+
+
+evaluating...:  30%|███       | 3/10 [00:01<00:04,  1.55it/s]
+
+
+
+
+
+
+
+
+
+evaluating...:  40%|████      | 4/10 [00:02<00:05,  1.19it/s]
+
+
+
+
+
+
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:04<00:04,  1.05it/s]
+
+
+
+
+
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:05<00:04,  1.03s/it]
+
+
+
+
+
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:06<00:03,  1.07s/it]
+
+
+
+
+
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:07<00:02,  1.11s/it]
+
+
+
+
+
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:08<00:01,  1.13s/it]
+
+
+
+
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:09<00:00,  1.01it/s]
+100%
+ 200/200 [01:32<00:00,  2.25it/s]
+0	0.00	0.1194	0.0000	0.1194
+
+100	0.00	0.3429	0.1212	0.2857
+
+Model Accuracy on GSM8K: 1.00%
+Average ROUGE-1: 0.0716
+Average ROUGE-2: 0.0109
+Average ROUGE-L: 0.0645
+
+model perplexity: 251.44
+model size: 3925.09 MiB
+Model Parameters: 1028938240
+==================================================
+==================================================
+Number of Pruned Layers = 11, Original Layers = 28, Remaining Layers=17
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+evaluating...:  20%|██        | 2/10 [00:00<00:01,  4.92it/s]
+
+evaluating...:  30%|███       | 3/10 [00:01<00:04,  1.72it/s]
+
+evaluating...:  40%|████      | 4/10 [00:02<00:04,  1.27it/s]
+
+evaluating...:  50%|█████     | 5/10 [00:03<00:04,  1.11it/s]
+
+evaluating...:  60%|██████    | 6/10 [00:04<00:03,  1.03it/s]
+
+evaluating...:  70%|███████   | 7/10 [00:05<00:03,  1.02s/it]
+
+evaluating...:  80%|████████  | 8/10 [00:07<00:02,  1.05s/it]
+
+evaluating...:  90%|█████████ | 9/10 [00:08<00:01,  1.08s/it]
+
+evaluating...: 100%|██████████| 10/10 [00:09<00:00,  1.07it/s]
+100%
+ 200/200 [14:02<00:00,  2.40it/s]
+0	0.00	0.1429	0.0588	0.1143
+
+100	0.00	0.1714	0.0000	0.1714
+
+Model Accuracy on GSM8K: 0.50%
+Average ROUGE-1: 0.0750
+Average ROUGE-2: 0.0104
+Average ROUGE-L: 0.0666
+
+model perplexity: 291.67
+model size: 3746.57 MiB
+Model Parameters: 982140416
+==================================================
+==================================================
+Number of Pruned Layers = 12, Original Layers = 28, Remaining Layers=16
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+evaluating...:  20%|██        | 2/10 [00:00<00:01,  6.74it/s]
+
+
+evaluating...:  30%|███       | 3/10 [00:01<00:03,  1.87it/s]
+
+
+evaluating...:  40%|████      | 4/10 [00:02<00:04,  1.37it/s]
+
+
+evaluating...:  50%|█████     | 5/10 [00:03<00:04,  1.18it/s]
+
+
+evaluating...:  60%|██████    | 6/10 [00:04<00:03,  1.09it/s]
+
+
+evaluating...:  70%|███████   | 7/10 [00:05<00:02,  1.04it/s]
+
+
+evaluating...:  80%|████████  | 8/10 [00:06<00:02,  1.00s/it]
+
+
+evaluating...:  90%|█████████ | 9/10 [00:07<00:01,  1.02s/it]
+
+
+evaluating...: 100%|██████████| 10/10 [00:08<00:00,  1.13it/s]
+100%
+ 200/200 [12:21<00:00,  2.52it/s]
+0	0.00	0.0588	0.0000	0.0588
+
+100	0.00	0.0000	0.0000	0.0000
+
+Model Accuracy on GSM8K: 2.00%
+Average ROUGE-1: 0.0994
+Average ROUGE-2: 0.0175
+Average ROUGE-L: 0.0873
+
+model perplexity: 385.97
+model size: 3568.05 MiB
+Model Parameters: 935342592
+==================================================
+==================================================
+Number of Pruned Layers = 13, Original Layers = 28, Remaining Layers=15
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+evaluating...:  20%|██        | 2/10 [00:00<00:00, 11.08it/s]
+
+
+
+evaluating...:  40%|████      | 4/10 [00:02<00:03,  1.58it/s]
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:03<00:03,  1.34it/s]
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:04<00:03,  1.21it/s]
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:05<00:02,  1.14it/s]
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:06<00:01,  1.09it/s]
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:07<00:00,  1.06it/s]
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:08<00:00,  1.21it/s]
+100%
+ 200/200 [10:45<00:00,  2.68it/s]
+0	0.00	0.0000	0.0000	0.0000
+
+100	0.00	0.1212	0.0000	0.1212
+
+Model Accuracy on GSM8K: 0.50%
+Average ROUGE-1: 0.1042
+Average ROUGE-2: 0.0130
+Average ROUGE-L: 0.0902
+
+model perplexity: 316.02
+model size: 3389.53 MiB
+Model Parameters: 888544768
+==================================================
+==================================================
+Number of Pruned Layers = 14, Original Layers = 28, Remaining Layers=14
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+evaluating...:  30%|███       | 3/10 [00:01<00:02,  2.91it/s]
+
+
+
+
+evaluating...:  40%|████      | 4/10 [00:02<00:03,  1.83it/s]
+
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:02<00:03,  1.47it/s]
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:03<00:03,  1.31it/s]
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:04<00:02,  1.22it/s]
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:05<00:01,  1.16it/s]
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:06<00:00,  1.12it/s]
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:07<00:00,  1.29it/s]
+100%
+ 200/200 [09:15<00:00,  2.80it/s]
+0	0.00	0.1111	0.0286	0.0833
+
+100	0.00	0.2286	0.0606	0.1143
+
+Model Accuracy on GSM8K: 2.00%
+Average ROUGE-1: 0.0835
+Average ROUGE-2: 0.0052
+Average ROUGE-L: 0.0675
+
+model perplexity: 6188.58
+model size: 3211.01 MiB
+Model Parameters: 841746944
+==================================================
+==================================================
+Number of Pruned Layers = 15, Original Layers = 28, Remaining Layers=13
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+
+evaluating...:  30%|███       | 3/10 [00:00<00:02,  3.33it/s]
+
+
+
+
+
+evaluating...:  40%|████      | 4/10 [00:01<00:02,  2.03it/s]
+
+
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:02<00:03,  1.61it/s]
+
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:03<00:02,  1.42it/s]
+
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:04<00:02,  1.31it/s]
+
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:05<00:01,  1.25it/s]
+
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:06<00:00,  1.20it/s]
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:07<00:00,  1.39it/s]
+100%
+ 200/200 [07:49<00:00,  2.98it/s]
+0	0.00	0.1622	0.0556	0.1351
+
+100	0.00	0.1176	0.0000	0.1176
+
+Model Accuracy on GSM8K: 1.00%
+Average ROUGE-1: 0.0473
+Average ROUGE-2: 0.0020
+Average ROUGE-L: 0.0417
+
+model perplexity: 96609.72
+model size: 3032.49 MiB
+Model Parameters: 794949120
+==================================================
+==================================================
+Number of Pruned Layers = 16, Original Layers = 28, Remaining Layers=12
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+
+
+evaluating...:  30%|███       | 3/10 [00:00<00:01,  6.27it/s]
+
+
+
+
+
+
+evaluating...:  40%|████      | 4/10 [00:01<00:02,  2.62it/s]
+
+
+
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:02<00:02,  1.89it/s]
+
+
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:03<00:02,  1.60it/s]
+
+
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:03<00:02,  1.45it/s]
+
+
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:04<00:01,  1.35it/s]
+
+
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:05<00:00,  1.30it/s]
+
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:06<00:00,  1.57it/s]
+100%
+ 200/200 [06:28<00:00,  2.73it/s]
+0	0.00	0.0274	0.0000	0.0274
+
+100	0.00	0.0000	0.0000	0.0000
+
+Model Accuracy on GSM8K: 0.00%
+Average ROUGE-1: 0.0232
+Average ROUGE-2: 0.0000
+Average ROUGE-L: 0.0213
+
+model perplexity: 89436.34
+model size: 2853.97 MiB
+Model Parameters: 748151296
+==================================================
+==================================================
+Number of Pruned Layers = 17, Original Layers = 28, Remaining Layers=11
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+evaluating...:  30%|███       | 3/10 [00:00<00:00,  9.45it/s]
+
+
+
+
+
+
+
+evaluating...:  40%|████      | 4/10 [00:01<00:01,  3.06it/s]
+
+
+
+
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:01<00:02,  2.10it/s]
+
+
+
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:02<00:02,  1.75it/s]
+
+
+
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:03<00:01,  1.57it/s]
+
+
+
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:04<00:01,  1.46it/s]
+
+
+
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:05<00:00,  1.40it/s]
+
+
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:05<00:00,  1.71it/s]
+100%
+ 200/200 [05:12<00:00,  2.74it/s]
+0	0.00	0.0000	0.0000	0.0000
+
+100	0.00	0.0625	0.0000	0.0625
+
+Model Accuracy on GSM8K: 0.00%
+Average ROUGE-1: 0.0175
+Average ROUGE-2: 0.0001
+Average ROUGE-L: 0.0169
+
+model perplexity: 5674482.00
+model size: 2675.45 MiB
+Model Parameters: 701353472
+==================================================
+==================================================
+Number of Pruned Layers = 18, Original Layers = 28, Remaining Layers=10
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+evaluating...:  30%|███       | 3/10 [00:00<00:00, 18.91it/s]
+
+
+
+
+
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:01<00:01,  2.59it/s]
+
+
+
+
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:02<00:01,  2.10it/s]
+
+
+
+
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:03<00:01,  1.83it/s]
+
+
+
+
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:03<00:01,  1.67it/s]
+
+
+
+
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:04<00:00,  1.57it/s]
+
+
+
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:05<00:00,  1.88it/s]
+100%
+ 200/200 [04:00<00:00,  3.62it/s]
+0	0.00	0.0571	0.0000	0.0571
+
+100	0.00	0.0541	0.0000	0.0541
+
+Model Accuracy on GSM8K: 0.00%
+Average ROUGE-1: 0.0214
+Average ROUGE-2: 0.0001
+Average ROUGE-L: 0.0202
+
+model perplexity: 327504.44
+model size: 2496.93 MiB
+Model Parameters: 654555648
+==================================================
+==================================================
+Number of Pruned Layers = 19, Original Layers = 28, Remaining Layers=9
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+evaluating...:  40%|████      | 4/10 [00:00<00:01,  5.84it/s]
+
+
+
+
+
+
+
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:01<00:01,  3.23it/s]
+
+
+
+
+
+
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:02<00:01,  2.42it/s]
+
+
+
+
+
+
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:02<00:01,  2.04it/s]
+
+
+
+
+
+
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:03<00:01,  1.84it/s]
+
+
+
+
+
+
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:04<00:00,  1.71it/s]
+
+
+
+
+
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:04<00:00,  2.08it/s]
+100%
+ 200/200 [02:54<00:00,  3.80it/s]
+0	0.00	0.0290	0.0000	0.0290
+
+100	0.00	0.0000	0.0000	0.0000
+
+Model Accuracy on GSM8K: 0.00%
+Average ROUGE-1: 0.0182
+Average ROUGE-2: 0.0002
+Average ROUGE-L: 0.0169
+
+model perplexity: 2092075.38
+model size: 2318.41 MiB
+Model Parameters: 607757824
+==================================================
+==================================================
+Number of Pruned Layers = 20, Original Layers = 28, Remaining Layers=8
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:  40%|████      | 4/10 [00:00<00:00, 18.16it/s]
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:01<00:01,  3.41it/s]
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:02<00:01,  2.70it/s]
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:02<00:00,  2.32it/s]
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:03<00:00,  2.07it/s]
+
+
+
+
+
+
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:03<00:00,  2.52it/s]
+100%
+ 200/200 [01:51<00:00,  4.15it/s]
+0	0.00	0.0256	0.0000	0.0256
+
+100	0.00	0.0000	0.0000	0.0000
+
+Model Accuracy on GSM8K: 0.00%
+Average ROUGE-1: 0.0182
+Average ROUGE-2: 0.0000
+Average ROUGE-L: 0.0170
+
+model perplexity: 133007.72
+model size: 2139.89 MiB
+Model Parameters: 560960000
+==================================================
+==================================================
+Number of Pruned Layers = 21, Original Layers = 28, Remaining Layers=7
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:  50%|█████     | 5/10 [00:00<00:00,  8.90it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:01<00:00,  4.58it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:01<00:00,  3.32it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:02<00:00,  2.69it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:02<00:00,  2.35it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:03<00:00,  2.91it/s]
+100%
+ 200/200 [00:54<00:00,  3.94it/s]
+0	0.00	0.0000	0.0000	0.0000
+
+100	0.00	0.0000	0.0000	0.0000
+
+Model Accuracy on GSM8K: 1.00%
+Average ROUGE-1: 0.0116
+Average ROUGE-2: 0.0000
+Average ROUGE-L: 0.0113
+
+model perplexity: 250014.59
+model size: 1961.37 MiB
+Model Parameters: 514162176
+==================================================
+==================================================
+Number of Pruned Layers = 22, Original Layers = 28, Remaining Layers=6
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:  60%|██████    | 6/10 [00:00<00:00,  9.94it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:  70%|███████   | 7/10 [00:01<00:00,  5.26it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:  80%|████████  | 8/10 [00:01<00:00,  3.87it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+evaluating...:  90%|█████████ | 9/10 [00:02<00:00,  3.10it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:02<00:00,  3.66it/s]
+100%
+ 200/200 [00:43<00:00,  4.59it/s]
+0	0.00	0.0278	0.0000	0.0278
+
+100	0.00	0.0556	0.0000	0.0556
+
+Model Accuracy on GSM8K: 1.00%
+Average ROUGE-1: 0.0225
+Average ROUGE-2: 0.0001
+Average ROUGE-L: 0.0221
+
+model perplexity: 154948.88
+model size: 1782.85 MiB
+Model Parameters: 467364352
+==================================================
+==================================================
+Number of Pruned Layers = 23, Original Layers = 28, Remaining Layers=5
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+evaluating...:  70%|███████   | 7/10 [00:00<00:00, 13.43it/s]
+
+evaluating...:  90%|█████████ | 9/10 [00:01<00:00,  5.29it/s]
+
+evaluating...: 100%|██████████| 10/10 [00:01<00:00,  5.15it/s]
+100%
+ 200/200 [00:39<00:00,  5.56it/s]
+0	0.00	0.0000	0.0000	0.0000
+
+100	0.00	0.0000	0.0000	0.0000
+
+Model Accuracy on GSM8K: 0.00%
+Average ROUGE-1: 0.0302
+Average ROUGE-2: 0.0000
+Average ROUGE-L: 0.0283
+
+model perplexity: 341223.03
+model size: 1604.33 MiB
+Model Parameters: 420566528
+==================================================
+==================================================
+Number of Pruned Layers = 24, Original Layers = 28, Remaining Layers=4
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+evaluating...:   0%|          | 0/10 [00:00<?, ?it/s]
+
+
+evaluating...: 100%|██████████| 10/10 [00:00<00:00, 10.58it/s]
+100%
+ 200/200 [00:35<00:00,  6.13it/s]
+0	0.00	0.0000	0.0000	0.0000
+
+100	0.00	0.0000	0.0000	0.0000
+
+Model Accuracy on GSM8K: 0.50%
+Average ROUGE-1: 0.0003
+Average ROUGE-2: 0.0000
+Average ROUGE-L: 0.0003
+
+model perplexity: 109149.56
+model size: 1425.81 MiB
+Model Parameters: 373768704
+==================================================
+==================================================
+Number of Pruned Layers = 25, Original Layers = 28, Remaining Layers=3
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:00<00:00, 187.92it/s]
+100%
+ 200/200 [00:31<00:00,  7.06it/s]
+0	0.00	0.0000	0.0000	0.0000
+
+100	0.00	0.0000	0.0000	0.0000
+
+Model Accuracy on GSM8K: 0.00%
+Average ROUGE-1: 0.0107
+Average ROUGE-2: 0.0001
+Average ROUGE-L: 0.0106
+
+model perplexity: 1804235.12
+model size: 1247.29 MiB
+Model Parameters: 326970880
+==================================================
+==================================================
+Number of Pruned Layers = 26, Original Layers = 28, Remaining Layers=2
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:00<00:00, 415.86it/s]
+100%
+ 200/200 [00:27<00:00,  7.23it/s]
+0	0.00	0.0000	0.0000	0.0000
+
+100	0.00	0.0000	0.0000	0.0000
+
+Model Accuracy on GSM8K: 0.00%
+Average ROUGE-1: 0.0020
+Average ROUGE-2: 0.0000
+Average ROUGE-L: 0.0018
+
+model perplexity: 12202089.00
+model size: 1068.78 MiB
+Model Parameters: 280173056
+==================================================
+==================================================
+Number of Pruned Layers = 27, Original Layers = 28, Remaining Layers=1
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:00<00:00, 735.79it/s]
+100%
+ 200/200 [00:35<00:00, 11.11it/s]
+0	0.00	0.0000	0.0000	0.0000
+
+100	0.00	0.0000	0.0000	0.0000
+
+Model Accuracy on GSM8K: 0.00%
+Average ROUGE-1: 0.0001
+Average ROUGE-2: 0.0000
+Average ROUGE-L: 0.0001
+
+model perplexity: inf
+model size: 890.26 MiB
+Model Parameters: 233375232
+==================================================
+==================================================
+Number of Pruned Layers = 28, Original Layers = 28, Remaining Layers=0
+Using Pre-Downloaded Dataset
+Dataset Loaded
+
+
+
+
+
+
+
+evaluating...: 100%|██████████| 10/10 [00:00<00:00, 493.23it/s]
+100%
+ 200/200 [00:32<00:00, 11.21it/s]
+0	0.00	0.0000	0.0000	0.0000
+
+100	0.00	0.0000	0.0000	0.0000
+
+Model Accuracy on GSM8K: 0.00%
+Average ROUGE-1: 0.0001
+Average ROUGE-2: 0.0000
+Average ROUGE-L: 0.0001
+
+model perplexity: inf
+model size: 890.26 MiB
+Model Parameters: 233375232
+==================================================
