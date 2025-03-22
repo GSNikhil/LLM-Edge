@@ -7,6 +7,8 @@ meeting_notes.txt
 gpt2/*
 core
 quantize_models.ipynb
+prune_models.ipynb
+logs/*.xlsx
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
